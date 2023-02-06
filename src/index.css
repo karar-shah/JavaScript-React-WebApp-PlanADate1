@@ -1,13 +1,395 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: "Lato";
+}
+
+.wrapper {
+    background: #0ac2cc;
+    width: 100%;
+    height: 100hv;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    width: 375px;
+}
+
+.main-form {
+    background: white;
+    border-radius: 24px 24px 0px 0px;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-top: -224px;
+}
+
+.main-form-createpass {
+    background: white;
+    border-radius: 24px 24px 0px 0px;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-top: -40px;
+}
+
+.main-logo {
+    margin-top: 48px;
+}
+
+.group-logo {
+    margin-top: 30px;
+}
+
+.main-logo-createpass {
+    margin-top: 48px;
+    margin-bottom: 13px;
+}
+
+.form-heading {
+    font-size: 24px;
+    font-weight: 315px;
+    margin-bottom: 5px;
+}
+
+.form-subheading {
+    font-size: 12px;
+    opacity: 70%;
+    margin-bottom: 40px;
+}
+
+.input-box {
+    text-align: left;
+    display: grid;
+}
+.reg-first {
+    text-align: left;
+    display: grid;
+}
+
+.reg-last {
+    display: grid;
+    justify-items: right;
+}
+
+.label-email {
+    font-size: 10px;
+    margin-left: 22px;
+    margin-bottom: -7px;
+    background: white;
+    max-width: 36px;
+    max-height: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+.label-password {
+    font-size: 10px;
+    margin-left: 22px;
+    margin-bottom: -7px;
+    background: white;
+    max-width: 50px;
+    max-height: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+.label-password-confirm {
+    font-size: 10px;
+    margin-left: 22px;
+    margin-bottom: -7px;
+    background: white;
+    max-width: 85px;
+    max-height: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.reg-firstname {
+    font-size: 10px;
+    margin-left: 22px;
+    margin-bottom: -7px;
+    background: white;
+    max-width: 57px;
+    max-height: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.reg-lastname {
+    font-size: 10px;
+    margin-right: 50%;
+    margin-bottom: -7px;
+    background: white;
+    width: 32%;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+.dob {
+    font-size: 10px;
+    margin-left: 22px;
+    margin-bottom: -7px;
+    background: white;
+    max-width: 63px;
+    max-height: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.reg-userName {
+    font-size: 10px;
+    margin-left: 22px;
+    margin-bottom: -7px;
+    background: white;
+    max-width: 55px;
+    max-height: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+.reg-email {
+    font-size: 10px;
+    margin-left: 22px;
+    margin-bottom: -7px;
+    background: white;
+    max-width: 35px;
+    max-height: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"] {
+    padding: 15px 20px 10px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: white;
+}
+
+.pass-input::-ms-reveal {
+    font-weight: 500px;
+}
+.remember-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.remember-form {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+    opacity: 70%;
+    font-size: 12px;
+}
+
+.check-tick {
+    appearance: none;
+    background-color: #000000;
+    opacity: 20%;
+    width: 21px;
+    height: 21px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-tick::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    font-size: 14px;
+    color: white;
+}
+
+.check-tick:checked {
+    background-color: #0ac2cc;
+    opacity: 100%;
+}
+
+.label-remember,
+.label-check-tick {
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+}
+
+.cyan-button {
+    background: rgba(10, 194, 204, 1);
+    color: white;
+    border: none;
+    width: 315px;
+    height: 39px;
+    border-radius: 24px;
+    font-size: 12px;
+    /* text-align: center; */
+    /* padding: 12px; */
+    margin-bottom: 40px;
+}
+
+.white-button {
+    background: white;
+    color: #0ac2cc;
+    border: 1px solid #0ac2cc;
+    font-size: 12px;
+    width: 315px;
+    height: 39px;
+    border-radius: 24px;
+    font-size: 12px;
+    /* text-align: center; */
+    /* padding: 12px 50%; */
+    margin-top: 10px;
+    /* margin-bottom: 60px; */
+}
+
+.create-pass-butt {
+    background: rgba(10, 194, 204, 1);
+    color: white;
+    border: none;
+    width: 315px;
+    height: 39px;
+    border-radius: 24px;
+    font-size: 12px;
+    /* text-align: center; */
+    /* padding: 12px; */
+    /* margin-bottom: 40px; */
+    margin-top: 40px;
+}
+
+hr {
+    border: 1px solid black;
+    opacity: 50%;
+    width: 70%;
+    margin-bottom: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.link-noaccount,
+.link-haveaccount {
+    font-size: 12px;
+    color: black;
+    opacity: 70%;
+    text-align: center;
+}
+
+/* Register page styling */
+/* rester screen color and font size */
+:root {
+    --clr_blue: #0ac2cc;
+    --clr_black: #000;
+    --clr_white: #fff;
+    --clr_grey: rgba(0, 0, 0, 1);
+}
+
+/* html tags styling  */
+
+h1 {
+    font-size: 24px;
+    color: --clr_black;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.auth-wrapper {
+    background: var(--clr_blue);
+    width: 100%;
+    height: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    width: 40%;
+}
+
+.logo-holder {
+    height: 85px;
+    width: 85px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.image-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.auth-form {
+    background: var(--clr_white);
+    padding: 30px 30px 34px 30px;
+    border-radius: 32px 32px 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+.auth-form p {
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.split-inputs {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.split-inputs input {
+    width: 94%;
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        width: 100%;
+        margin: 0px;
+    }
+    .cyan-button {
+        /* padding: 12px 50%; */
+        width: 100%;
+        /* 
+        text-align: center;
+        align-items: center; */
+    }
+    .white-button {
+        /* padding: 12px 50%; */
+        width: 100%;
+        /* align-items: center;
+        text-align: center; */
+    }
+    input {
+        width: 100%;
+        height: 40px;
+    }
+    .reg-lastname {
+        width: 35%;
+    }
 }
