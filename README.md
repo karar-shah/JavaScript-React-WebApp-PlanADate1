@@ -1,3 +1,7 @@
+# Link of the app:
+[Plan a Date](https://karar-reactjs-plan-a-date.netlify.app/) | https://karar-reactjs-plan-a-date.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
